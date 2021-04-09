@@ -8,6 +8,18 @@ Some hacky code for scraping and analyzing Reddit comments that use 'ironic *not
 
 > LMAO not Scott Pilgrim
 
+## Pattern matching
+
+The patterns to search for are defined in `phrases.py`. The main patterns have the form "Not `pronoun` `verbing`".
+
+However, not all uses of this construction involve a gerund-participial clause (see the third and fourth examples above). To attempt to catch some of these, we also search for the patterns "lmao not" and "omg not". These have a high false positive rate (even after the filtering step described below), so I excluded them from my quantitative analyses (in the included ipython notebooks), and only used them as a source from which to manually curate examples.
+
+## Data files
+
+- `sub_counts.csv` gives the number of matching comments per subreddit in descending order (not including non-gerund patterns)
+- `comments.csv` has a row per comment, with columns for timestamp, author, subreddit, and which pattern the comment matched
+- `counts.csv` is like the above but aggregated per subreddit and pattern
+
 ## Pipeline
 
 ### 1. Scrape reddit comments
