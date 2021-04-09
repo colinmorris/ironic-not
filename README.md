@@ -1,3 +1,12 @@
+Some hacky code for scraping and analyzing Reddit comments that use 'ironic *not*'. Examples:
+
+> Not them trying to pretend that Michelle's screaming at the girls for real.
+
+> Not me using my migraine today as an excuse to buy another squishmallow!!!!
+
+> STOP! Omg not the Dream Flowey bahahaha.
+
+> LMAO not Scott Pilgrim
 
 ## Pipeline
 
