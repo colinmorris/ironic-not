@@ -8,6 +8,8 @@ Some hacky code for scraping and analyzing Reddit comments that use 'ironic *not
 
 > LMAO not Scott Pilgrim
 
+Discussed in [this blog post](http://colinmorris.github.io/blog/ironic-not).
+
 ## Pattern matching
 
 The patterns to search for are defined in `phrases.py`. The main patterns have the form "Not `pronoun` `verbing`".
